@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- character set -->
+    <meta charset="UTF-8">
+    <!-- viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- title -->
+    <title>Meriem Beauty - Makeup Artist</title>
+
+    <!-- css normalization file -->
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <!-- fontawesome library-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- main css file -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <!-- page container -->
+    <section class="page-container">
+        <!-- page header -->
+        <header>
+            <!-- small devices header -->
+            <section class="header-sm">
+                <div class="container">
+                    <!-- nav btn -->
+                    <button class="nav-btn" id="nav-btn-show">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <!-- logo -->
+                    <h2>
+                        <a href="./"><span>M</span>eriem <span>B</span>eauty<span>.</span></a>
+                    </h2>
+                </div>
+                <!-- links container -->
+                <div class="container">
+                    <!-- location -->
+                    <a href="https://maps.google.com/">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </a>
+                    <!-- email -->
+                    <a href="mailto:meriem@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <!-- phone -->
+                    <a href="callto:00000000">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </section>
+            <!-- large devices header -->
+            <section class="header-xl">
+                <!-- logo -->
+                <h2>
+                    <a href="./"><span>M</span>eriem <span>B</span>eauty<span>.</span></a>
+                </h2>
+                <!-- navbar -->
+                <nav>
+                    <ul>
+                        <li>
+                            <a class="selected-nav" href="./">accueille</a>
+                        </li>
+                        <li>
+                            <a href="./portefeuille">portefeuille</a>
+                        </li>
+                        <li>
+                            <a href="./services">services</a>
+                        </li>
+                        <li>
+                            <a href="./blogs">blogs</a>
+                        </li>
+                        <li>
+                            <a href="./apropos">à propos</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- contact me btn -->
+                <button class="primary-btn">contactez moi</button>
+            </section>
+        </header>
+        <!-- navigation section -->
+        <section class="navigation-sm">
+            <!-- exit btn  -->
+            <button id="nav-btn-exit">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <!-- links -->
+            <ul>
+                <li>
+                    <a class="selected-nav" href="./">
+                        <span>accueille</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="./portefeuille">
+                        <span>portefeuille</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="./apropos">
+                        <span>à propos</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="./services">
+                        <span>services</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="./blogs">
+                        <span>blogs</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- hero section -->
+        <section class="hero">
+            <!-- text content -->
+            <section class="txt-content">
+                <div class="container">
+                    <div class="border-top"></div>
+                    <h2>Je suis Meriem Beauty, une <span>makeup artist</span></h2>
+                    <p>When it comes to delivering bleeding edge digital solutions, top brands in technology, sports, and entertainment trust
+                    our team of designers, developers, and strategic thinkers to get the job done.</p>
+                    <div class="btns">
+                        <button class="primary-btn">contactez moi</button>
+                        <button class="secondary-btn">regardez la vidéo</button>
+                    </div>
+                </div>
+            </section>
+            <!-- img content -->
+            <section class="img-content">
+                    <div class="int-circle">
+                        <img src="./assets/img/img-hero.png" alt="">
+                        <div class="wrapper-int"></div>
+                        <div class="wrapper-ext"></div>
+                        <div class="border-int"></div>
+                        <div class="border-ext"></div>
+                    </div>
+                </div>
+            </section>
+         
+        </section>
+        
+        <!-- particle js background -->
+        <div id="particule-div"></div>
+    </section>  
+    <div class="shadow"></div>
+    <!-- header script -->
+    <script src="./assets/js/header.js"></script>
+    <!-- import particle js -->
+    <script src="./assets/js/particles-js/particles.min.js"></script>
+    <script src="./assets/js/particles-js/particle.js"></script>
+</body>
+</html>
