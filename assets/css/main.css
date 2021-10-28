@@ -229,14 +229,7 @@ header h2 a span:last-child {
   padding-top: 140px;
   padding-bottom: 60px;
 }
-#particule-div{
-  width: 100%;
-  height:100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -10;
-}
+
 .hero .txt-content,
 .hero .img-content {
   width: 50%;
@@ -332,7 +325,183 @@ header h2 a span:last-child {
 .hero .txt-content .btns button:first-child {
   margin-left: 0;
 }
+.testimony{
+  width: 100%;
+  height: auto;
+  background-color: #f7f6fc;
+  margin-top: 45px;
+  padding:60px;
+}
+.services{
+  width: 100%;
+  height: auto;
+  background-color: #f7f6fc;
+  padding:60px 0;
+}
+.services .container{
+  width: 100%;
+  height: auto;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.services .container .articles-container{
+    margin-top: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    max-width: 1200px;
+}
+.services .container .articles-container article{
+    width: 320px;
+    flex-shrink: 0;
+    padding: 12px;
+    background: var(--color-3);
+    box-shadow: 0 0 27px 1px #6d6d6d1c;
+    border-radius: 4px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.services .container .articles-container article .txt{
+  margin-left: 12px;
+}
+.services .container .articles-container article .txt p{
+  font-size: 15px;
+  opacity: .8;
+}
+.services .container .img {
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    background-color: var(--color-1);
+    border-radius: 5px;
+}
+.services .container .img img{
+  width: 100%;
+}
+.portfolio{
+  width: 100%;
+  height: auto;
+  background-color: var(--color-3);
+  padding:60px 0;
+}
+.portfolio .container{
+  width: 100%;
+  height: auto;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.testimony .container{
+  width: 100%;
+  height: auto;
+  max-width: 1600px;
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.testimony .container > h2, .portfolio .container > h2 ,.services .container > h2{
+    text-transform: uppercase;
+    color: var(--color-1);
+    display: inline-block;
+    border-bottom: 2px solid #b44271;
+}
 
+.testimony .container article{
+    width: 300px;
+    flex-shrink: 0;
+    padding: 15px;
+    background: var(--color-3);
+    box-shadow: 0 0 27px 1px #6d6d6d1c;
+    border-radius: 4px;
+    margin: 20px;
+}
+.testimony .container article p{
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #45515d17;
+    padding-top: 20px;
+}
+.testimony .container article div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.testimony .container article div h3{
+    margin-left: 12px;
+    font-weight: 800;
+}
+.testimony .container article .img img{
+  width: 100%;
+  height: 100%;
+}
+.testimony .container article .img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    box-shadow: 0 0 3px 4px #00000026;
+    overflow: hidden;
+}
+.testimony .articles-container{
+    margin-top: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    max-width: 1200px;
+}
+.portfolio .pictures-container{
+    margin-top: 55px;
+    max-width: 1050px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.portfolio .pictures-container .img{
+    background-color: #a7295e2d;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00000012;
+    overflow: hidden;
+}
+.portfolio .pictures-container .img img{
+  width: 100%;
+}
+.portfolio .container > a,.services .container > a{
+     margin-top: 25px;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: capitalize;
+    border-bottom: 1px solid var(--color-2);
+    transition: all linear 100ms;
+}
+.portfolio .container > a i,.services .container > a i{
+    margin-left: 5px;
+    font-size: 15px;
+    transition: all linear 100ms;
+}
+.portfolio .container > a:hover i,.services .container > a:hover i{
+  transform:translate(10px,0) ;
+}
 
 @media screen and (min-width: 850px) and (max-width: 975px) {
   .header-xl ul li a {
@@ -396,6 +565,9 @@ header h2 a span:last-child {
 
 
 @media screen and (max-width: 849px) {
+  .testimony{
+    padding:60px 0;
+  }
   .header-sm {
     width: 100%;
     height: 65px;
@@ -459,10 +631,21 @@ header h2 a span:last-child {
     margin: 8px 0;
     width: 100%;
   }
+  .testimony{
+    margin-top: 0;
+  }
 }
 
 
 @media screen and (max-width: 530px){
+  .testimony{
+    padding:60px 25px;
+  }
+
+  .portfolio .btns button{
+    width: 100%;
+    margin: 10px 0;
+  }
   .hero .int-circle {
     width: 270px;
     height: 270px;
@@ -493,9 +676,14 @@ header h2 a span:last-child {
     width: 120%;
     margin-bottom: 78px;
   }
+  .portfolio .pictures-container .img{
+    width: 36vw;
+    height: 36vw;
+  }
 }
 
-.scroll{
-  width: 100%;
-  height: 100000px;
+@media screen and (min-width:700px) and (max-width:1035px){
+  .portfolio .pictures-container{
+    max-width: 700px;
+  }
 }

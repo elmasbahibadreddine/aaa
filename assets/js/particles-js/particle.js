@@ -1,1 +1,0 @@
-particlesJS.load('particule-div',"./assets/js/particles-js/particles.json");

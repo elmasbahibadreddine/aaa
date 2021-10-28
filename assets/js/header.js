@@ -39,7 +39,7 @@ navBtnShow.onclick = ()=>{
         navSm.style.left = 0;
     },110);
 
-    preventScrolling(true);
+    // preventScrolling(true);
 }
 shadow.onclick = navBtnExit.onclick = ()=>{
     navSm.style.left = "-100%";
@@ -50,5 +50,5 @@ shadow.onclick = navBtnExit.onclick = ()=>{
     setTimeout(()=>{
         shadow.style.display = "none";
     },300);
-    preventScrolling(false);
+    // preventScrolling(false);
 } 
