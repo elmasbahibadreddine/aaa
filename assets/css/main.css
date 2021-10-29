@@ -502,6 +502,108 @@ header h2 a span:last-child {
 .portfolio .container > a:hover i,.services .container > a:hover i{
   transform:translate(10px,0) ;
 }
+footer{
+  width: 100%;
+  height: auto;
+  padding: 45px 20px;
+  background-color: var(--color-2);
+}
+footer .container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+footer h2{
+    text-transform: uppercase;
+    font-size: 18px;
+    position: relative;
+    margin-bottom: 20px;
+    color: var(--color-3);
+
+}
+footer h2::after{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: var(--color-1);
+    left: 50%;
+    bottom: -7px;
+    transform: translateX(-50%);
+}
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer ul li a i{
+  color: var(--color-3);
+}
+footer ul li a span{
+  margin-left: 5px;
+  color: var(--color-3);
+}
+footer ul li a span:hover{
+  text-decoration: underline;
+}
+footer ul li{
+  margin: 2px 0;
+}
+footer ul:first-of-type li:last-of-type a span{
+  text-transform: capitalize;
+}
+
+footer .social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+}
+footer .social-media a{
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all linear 120ms;
+
+}
+footer .social-media a i {
+    color: var(--color-3);
+    font-size: 17px;
+    transition: all linear 120ms;
+}
+
+footer .social-media a:nth-child(1){
+    background-color: #006cc3;
+}
+footer .social-media a:nth-child(2){
+    background-color: #e91e63;
+}
+footer .social-media a:nth-child(3){
+    background-color: #4caf50;
+}
+
+footer .social-media a:hover{
+  background-color: var(--color-3);
+}
+footer .social-media a:nth-child(1):hover i{
+    color: #006cc3;
+}
+footer .social-media a:nth-child(2):hover i{
+    color: #e91e63;
+}
+footer .social-media a:nth-child(3):hover i{
+    color: #4caf50;
+}
 
 @media screen and (min-width: 850px) and (max-width: 975px) {
   .header-xl ul li a {
@@ -685,5 +787,21 @@ header h2 a span:last-child {
 @media screen and (min-width:700px) and (max-width:1035px){
   .portfolio .pictures-container{
     max-width: 700px;
+  }
+}
+@media screen and (max-width: 800px){
+  footer .container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .container > *{
+    margin: 30px 0;
+  }
+  footer .container ul:first-of-type{
+    margin-top: 0;
+  }
+  footer .container ul:last-of-type{
+    margin-bottom: 0;
   }
 }
