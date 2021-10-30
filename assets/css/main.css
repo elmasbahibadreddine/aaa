@@ -59,6 +59,7 @@
     position: absolute;
     top: -9px;
     right: -9px;
+    z-index: 4;
 }
 .image-viewer{
   width: 100vw;
@@ -704,6 +705,7 @@ header h2 a span:last-child {
 }
 .portfolio .pictures-container .img img{
   width: 100%;
+  cursor: pointer;
 }
 .portfolio .container > a,.services .container > a{
      margin-top: 25px;
