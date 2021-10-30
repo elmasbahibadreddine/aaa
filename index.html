@@ -1,60 +1,42 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <!-- character set -->
     <meta charset="UTF-8">
-    <!-- viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <!-- title -->
     <title>Meriem Beauty - Makeup Artist</title>
 
-    <!-- css normalization file -->
     <link rel="stylesheet" href="./assets/css/normalize.css">
-    <!-- fontawesome library-->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <!-- main css file -->
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
-    <!-- page container -->
     <section class="page-container">
-        <!-- page header -->
         <header>
-            <!-- small devices header -->
             <section class="header-sm">
                 <div class="container">
-                    <!-- nav btn -->
                     <button class="nav-btn" id="nav-btn-show">
                         <i class="fas fa-bars"></i>
                     </button>
-                    <!-- logo -->
                     <h2>
                         <a href="./"><span>M</span>eriem <span>B</span>eauty<span>.</span></a>
                     </h2>
                 </div>
-                <!-- links container -->
                 <div class="container">
-                    <!-- location -->
                     <a href="https://maps.google.com/">
                         <i class="fas fa-map-marker-alt"></i>
                     </a>
-                    <!-- email -->
                     <a href="mailto:meriem@gmail.com">
                         <i class="fas fa-envelope"></i>
                     </a>
-                    <!-- phone -->
                     <a href="callto:00000000">
                         <i class="fas fa-phone"></i>
                     </a>
                 </div>
             </section>
-            <!-- large devices header -->
             <section class="header-xl">
-                <!-- logo -->
                 <h2>
                     <a href="./"><span>M</span>eriem <span>B</span>eauty<span>.</span></a>
                 </h2>
-                <!-- navbar -->
                 <nav>
                     <ul>
                         <li>
@@ -71,17 +53,13 @@
                         </li>
                     </ul>
                 </nav>
-                <!-- contact me btn -->
-                <button class="primary-btn">contactez moi</button>
+                <button id="show-contact-modal" class="primary-btn">contactez moi</button>
             </section>
         </header>
-        <!-- navigation section -->
         <section class="navigation-sm">
-            <!-- exit btn  -->
             <button id="nav-btn-exit">
                 <i class="fas fa-chevron-left"></i>
             </button>
-            <!-- links -->
             <ul>
                 <li>
                     <a class="selected-nav" href="./">
@@ -109,9 +87,7 @@
                 </li>
             </ul>
         </section>
-        <!-- hero section -->
         <section class="hero">
-            <!-- text content -->
             <section class="txt-content">
                 <div class="container">
                     <div class="border-top"></div>
@@ -119,12 +95,11 @@
                     <p>When it comes to delivering bleeding edge digital solutions, top brands in technology, sports, and entertainment trust
                     our team of designers, developers, and strategic thinkers to get the job done.</p>
                     <div class="btns">
-                        <button class="primary-btn">contactez moi</button>
-                        <button class="secondary-btn">regardez la vidéo</button>
+                        <button id="show-contact-modal" class="primary-btn">contactez moi</button>
+                        <button id="show-video-modal" class="secondary-btn">regardez la vidéo</button>
                     </div>
                 </div>
             </section>
-            <!-- img content -->
             <section class="img-content">
                     <div class="int-circle">
                         <img src="./assets/img/img-hero.png" alt="">
@@ -137,10 +112,8 @@
             </section>
          
         </section>
-        <!-- testimony section -->
         <section class="testimony">
             <div class="container">
-                <!-- title -->
                 <h2>Les gens disent de moi</h2>
                 <div class="articles-container">
                     <article>
@@ -212,10 +185,8 @@
                 </div>
             </div>
         </section>
-        <!-- portfolio section -->
-        <section class="portfolio">
+        <section id="portfolio" class="portfolio">
             <div class="container">
-                <!-- title -->
                 <h2>Portefeuille</h2>
                 <div class="pictures-container">
                     <div class="img">
@@ -297,10 +268,8 @@
                 </a>
             </div>
         </section>
-        <!-- services section -->
         <section class="services">
             <div class="container">
-                <!-- title -->
                 <h2>services</h2>
                 <div class="articles-container">
                     <article>
@@ -418,7 +387,6 @@
                 </a>
             </div>
         </section>
-        <!-- footer -->
         <footer>
             <div class="container">
                 <ul>
@@ -444,7 +412,7 @@
                 </ul>
                 <div>
                     <h2>reseaux sociaux</h2>
-                    <div class="social-media">
+                    <div class="social-media footer">
                         <a href="./">
                             <i class="fab fa-facebook-f"></i>
                         </a>
@@ -470,11 +438,93 @@
                     </li>
                 </ul>
             </div>
-          
         </footer>
     </section>  
+    <section class="contact-modal">
+        <div class="exit">
+            <h3> contactez moi</h3>
+            <button id="exit-contact-modal">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="contact-info">
+            <li>
+                <a href="mailto:contact@badr.com">
+                    <div>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <span>contact@luxypalace.com</span>
+                </a>
+            </li>
+            <li>
+                <a href="tel:+212000000">
+                    <div>
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <span>+212 633 239 834</span>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <span>casablanca, maroc</span>
+                </a>
+            </li>
+        </ul>
+        <div class="exit smlks">
+            <h3>reseaux sociaux</h3>
+        </div>
+        <div class="social-media modal">
+            <a href="./">
+                <div>
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <span>Facebook</span>
+            </a>
+            <a href="./">
+                <div>
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <span>Instagram</span>
+            </a>
+            <a href="tel:+21200000">
+                <div>
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <span>Whatsapp</span>
+            </a>
+        </div>
+    </section>
+    <section class="image-viewer">
+        <div class="container">
+            <div class="img">
+                <img src="./assets/img/portfolio/8.jpg" alt="">
+            </div>
+            <button class="exit-img-viewer">
+                <i class="fas fa-times"></i>
+            </button>
+            <button class="arrow next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <button class="arrow prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+        </div>
+    </section>
+    <section class="video-modal">
+        <div class="container">
+            <button id="exit-video-modal" class="exit-video">
+                <i class="fas fa-times"></i>
+            </button>
+            <video controls src="./assets/video/video.mp4"></video>
+        </div>
+    </section>
     <div class="shadow"></div>
-    <!-- header script -->
     <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/contactModal.js"></script>
+    <script src="./assets/js/imageViewer.js"></script>
+    <script src="./assets/js/video-modal.js"></script>
 </body>
 </html>

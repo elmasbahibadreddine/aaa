@@ -24,6 +24,225 @@
   left: 0;
   display: none;
 }
+.video-modal{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 90%;
+  height: auto;
+  max-width: 640px;
+  z-index: 120;
+  box-shadow: 0 0 23px -5px rgb(0 0 0 / 30%);
+  display: none;
+  opacity: 0;
+  transition: opacity ease-in-out 100ms;
+}
+.video-modal .container{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.video-modal .container video{
+  width: 100%;
+}
+.video-modal .container .exit-video{
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    position: absolute;
+    top: -9px;
+    right: -9px;
+}
+.image-viewer{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 10000;
+  background-color: var(--color-3);
+  left: 0;
+  top: 0;
+  display: none;
+}
+.image-viewer .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.image-viewer .img img{
+  width: 100%;
+}
+.image-viewer .img{
+    width:100%;
+    max-width: 700px;
+}
+.exit-img-viewer{
+    border-radius: 50%;
+    border: none;
+    opacity: .5;
+    display: flex;
+    padding: 0;
+    width: 36px;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+.image-viewer .arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    font-size: 35px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    opacity: .5;
+}
+.image-viewer .arrow.next{
+  right: 20px;
+  left: auto;
+}
+.contact-modal{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: var(--color-3);
+  width: 330px;
+  height: auto;
+  z-index: 120;
+  border-radius: 4px;
+  box-shadow: 0 0 23px -5px rgb(0 0 0 / 30%);
+  padding: 20px;
+  display: none;
+  opacity: 0;
+  transition: opacity ease-in-out 100ms;
+}
+.contact-modal .exit{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #929aa333;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.contact-modal .exit h3{
+    text-transform: capitalize;
+    font-weight: 800;
+}
+.contact-modal .exit.smlks{
+  margin-top: 25px;
+}
+.contact-modal .exit button{
+    border-radius: 50%;
+    border: none;
+    opacity: .5;
+    display: flex;
+    padding: 0;
+    width: 28px;
+    height: 28px;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+.contact-modal .contact-info{
+  width: 100%;
+}
+.contact-modal .contact-info li a div{
+    width: 30px;
+    height: 30px;
+    background: var(--color-1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+.contact-modal  ul {
+  margin-top: 30px;
+}
+.contact-modal .contact-info li a div i{
+  color: var(--color-3);
+}
+.contact-modal .contact-info li a{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+.contact-modal .contact-info li{
+  margin: 13px 0;
+}
+.contact-modal .contact-info li span{
+  margin-left: 10px;
+  font-weight: 600;
+}
+.social-media.modal{
+  margin-top: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.social-media.modal a{
+  margin: 6px 0;
+  display: flex;
+  align-items: center;
+}
+
+.social-media.modal a div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all linear 120ms;
+    box-shadow: 0 0 10px #00000021;
+    margin-right: 10px;
+}
+.social-media.modal a span{
+  font-weight: 600;
+}
+
+.social-media.modal a:nth-child(1) div{
+    background-color: #006cc3;
+}
+.social-media.modal a:nth-child(2) div{
+    background-color: #e91e63;
+}
+.social-media.modal a:nth-child(3) div{
+    background-color: #4caf50;
+}
+
+.social-media.modal a:hover div{
+  background-color: var(--color-3);
+}
+.social-media.modal a:nth-child(1):hover i{
+    color: #006cc3;
+}
+.social-media.modal a:nth-child(2):hover i{
+    color: #e91e63;
+}
+.social-media.modal a:nth-child(3):hover i{
+    color: #4caf50;
+}
 header {
   width: 100%;
   height: auto;
@@ -552,19 +771,19 @@ footer ul li a span:hover{
   text-decoration: underline;
 }
 footer ul li{
-  margin: 2px 0;
+  margin: 5px 0;
 }
 footer ul:first-of-type li:last-of-type a span{
   text-transform: capitalize;
 }
 
-footer .social-media{
+.social-media{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 35px;
 }
-footer .social-media a{
+.social-media.footer a{
     margin: 0 10px;
     display: flex;
     align-items: center;
@@ -576,32 +795,32 @@ footer .social-media a{
     transition: all linear 120ms;
 
 }
-footer .social-media a i {
+.social-media a i {
     color: var(--color-3);
     font-size: 17px;
     transition: all linear 120ms;
 }
 
-footer .social-media a:nth-child(1){
+.social-media.footer a:nth-child(1){
     background-color: #006cc3;
 }
-footer .social-media a:nth-child(2){
+.social-media.footer a:nth-child(2){
     background-color: #e91e63;
 }
-footer .social-media a:nth-child(3){
+.social-media.footer a:nth-child(3){
     background-color: #4caf50;
 }
 
-footer .social-media a:hover{
+.social-media a:hover{
   background-color: var(--color-3);
 }
-footer .social-media a:nth-child(1):hover i{
+.social-media.footer a:nth-child(1):hover i{
     color: #006cc3;
 }
-footer .social-media a:nth-child(2):hover i{
+.social-media.footer a:nth-child(2):hover i{
     color: #e91e63;
 }
-footer .social-media a:nth-child(3):hover i{
+.social-media.footer a:nth-child(3):hover i{
     color: #4caf50;
 }
 
@@ -667,6 +886,12 @@ footer .social-media a:nth-child(3):hover i{
 
 
 @media screen and (max-width: 849px) {
+  .image-viewer .arrow{
+    left: 5px;
+  }
+  .image-viewer .arrow.next{
+    right: 5px;
+  }
   .testimony{
     padding:60px 0;
   }
