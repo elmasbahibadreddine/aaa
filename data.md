@@ -1,39 +1,37 @@
 1. FullName.
 
-2. google map link.
+2. phone number.
 
 3. email.
 
-4. phone number.
+4. local address.
 
-5. paragraph of hero section.
+5. google map link.
 
-6. self representation in a video.
+6. link for instagram page.
 
-7. two real photos.
+7. link for facebook page.
 
-8. six name for testimony.
+8. paragraph of hero section.
 
-9. six peopole photo for testimony.
+9. about me paragraph.
 
-10. six quotes for testimony.
+10. two real photos.
 
-11. portfolio imgs.
+11. six name for testimony.
 
-12. services names.
+12. six peopole photo for testimony.
 
-13. services photos.
+13. six quotes for testimony.
 
-14. services bref description.
+14. portfolio imgs.
 
-15. local address.
+15. services names.
 
-16. link for instagram page.
+16. services photos.
 
-17. link for facebook page.
+17. services bref description.
 
-18. about me paragraph.
+18. a resume in pdf.
 
-19. a resume in pdf.
-
-20. og image.
+19. self representation in a video.
