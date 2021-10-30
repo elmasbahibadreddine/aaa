@@ -35,3 +35,5 @@
 18. about me paragraph.
 
 19. a resume in pdf.
+
+20. og image.
